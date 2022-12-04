@@ -1,29 +1,10 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"log"
-	"os"
 	"strings"
 )
-
-// readLines reads a whole file into memory
-// and returns a slice of its lines.
-func readLines(path string) ([]string, error) {
-	file, err := os.Open(path)
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-
-	var lines []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-	return lines, scanner.Err()
-}
 
 // A for Rock, B for Paper, and C for Scissors.
 // X for Rock, Y for Paper, and Z for Scissors
@@ -31,7 +12,7 @@ func readLines(path string) ([]string, error) {
 // 0 if you lost, 3 if the round was a draw, and 6 if you won
 
 // X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win.
-func main() {
+func main2_2() {
 	lines, err := readLines("input.txt")
 	if err != nil {
 		log.Fatalf("readLines: %s", err)
