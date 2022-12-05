@@ -8,10 +8,8 @@ import (
 )
 
 func main4_2() {
-	lines, err := readLines("resource/day4.txt")
-	if err != nil {
-		log.Fatalf("readLines: %s", err)
-	}
+	lines := readLines("resource/day4.txt")
+
 	result := 0
 	for _, line := range lines {
 		slice := strings.Split(line, ",")

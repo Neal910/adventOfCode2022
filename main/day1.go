@@ -8,10 +8,8 @@ import (
 )
 
 func main1_2() {
-	lines, err := readLines("input.txt")
-	if err != nil {
-		log.Fatalf("readLines: %s", err)
-	}
+	lines:= readLines("input.txt")
+
 	tmp := 0
 	arr := []int{}
 	l := 0

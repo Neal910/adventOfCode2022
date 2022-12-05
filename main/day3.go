@@ -9,10 +9,8 @@ import (
 )
 
 func main3_2() {
-	lines, err := readLines("resource/day3.txt")
-	if err != nil {
-		log.Fatalf("readLines: %s", err)
-	}
+	lines:= readLines("resource/day3.txt")
+
 	sum := 0
 	for i := 0; i < len(lines); i += 3 {
 		str0 := lines[i]

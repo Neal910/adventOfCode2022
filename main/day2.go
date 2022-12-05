@@ -13,10 +13,8 @@ import (
 
 // X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win.
 func main2_2() {
-	lines, err := readLines("input.txt")
-	if err != nil {
-		log.Fatalf("readLines: %s", err)
-	}
+	lines:= readLines("input.txt")
+
 	tmp := 0
 	sum := 0
 
