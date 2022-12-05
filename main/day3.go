@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 	"unicode"
 )
 
 func main3_2() {
-	lines:= readLines("resource/day3.txt")
+	lines := readLines("resource/day3.txt")
 
 	sum := 0
 	for i := 0; i < len(lines); i += 3 {
@@ -37,10 +36,8 @@ func main3_2() {
 
 func main3_1() {
 	// lines, err := readLines("input.txt")
-	lines, err := readLines("resource/day3.txt")
-	if err != nil {
-		log.Fatalf("readLines: %s", err)
-	}
+	lines := readLines("resource/day3.txt")
+
 	sum := 0
 	for _, line := range lines {
 		runee := []rune(line)

@@ -8,7 +8,7 @@ import (
 )
 
 func main1_2() {
-	lines:= readLines("input.txt")
+	lines := readLines("input.txt")
 
 	tmp := 0
 	arr := []int{}

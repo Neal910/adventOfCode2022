@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"strconv"
 	"strings"
 )
 
@@ -25,12 +23,4 @@ func main4_2() {
 
 	}
 	fmt.Printf("Result is %d \n", result)
-}
-
-func toInt(n string) int {
-	num, err := strconv.Atoi(n)
-	if err != nil {
-		panic(err)
-	}
-	return num
 }

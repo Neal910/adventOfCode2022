@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strings"
 )
 
@@ -13,7 +12,7 @@ import (
 
 // X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win.
 func main2_2() {
-	lines:= readLines("input.txt")
+	lines := readLines("input.txt")
 
 	tmp := 0
 	sum := 0
