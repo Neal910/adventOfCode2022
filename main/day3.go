@@ -8,7 +8,7 @@ import (
 	"unicode"
 )
 
-func main() {
+func main3_2() {
 	lines, err := readLines("resource/day3.txt")
 	if err != nil {
 		log.Fatalf("readLines: %s", err)
