@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -12,8 +13,8 @@ import (
 func readLines(path string) []string {
 	file, err := os.Open(path)
 	if err != nil {
-		panic(err)
-		return nil
+		fmt.Println("Error: ", err)
+		os.Exit(1)
 	}
 	defer file.Close()
 
@@ -32,7 +33,8 @@ func readLines(path string) []string {
 func toInt(n string) int {
 	num, err := strconv.Atoi(n)
 	if err != nil {
-		panic(err)
+		fmt.Println("Error: ", err)
+		os.Exit(1)
 	}
 	return num
 }
