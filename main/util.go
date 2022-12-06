@@ -30,6 +30,7 @@ func readLines(path string) []string {
 	return lines
 }
 
+// toInt converts string to int
 func toInt(n string) int {
 	num, err := strconv.Atoi(n)
 	if err != nil {
@@ -37,4 +38,18 @@ func toInt(n string) int {
 		os.Exit(1)
 	}
 	return num
+}
+
+// isDuplicate check if the rune array has duplicate element
+func isDuplicate(arr []rune) bool {
+	visited := make(map[rune]bool, 0)
+
+	for _, r := range arr {
+		if visited[r] == true {
+			return true
+		} else {
+			visited[r] = true
+		}
+	}
+	return false
 }
