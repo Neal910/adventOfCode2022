@@ -40,6 +40,14 @@ func toInt(n string) int {
 	return num
 }
 
+func toArrayInt(arr []string) []int {
+	var intArr []int
+	for _, a := range arr {
+		intArr = append(intArr, toInt(a))
+	}
+	return intArr
+}
+
 // isDuplicate check if the rune array has duplicate element
 func isDuplicate(arr []rune) bool {
 	visited := make(map[rune]bool, 0)

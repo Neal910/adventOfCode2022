@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main6_2() {
 	lines := readLines("./resource/day6.txt")
 
 	line := lines[0]
